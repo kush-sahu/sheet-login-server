@@ -10,7 +10,9 @@ app.use(express.json());
 
 // CORS configuration
 const corsOptions = {
-  origin: 'https://65f75fd5a4d565d6126a2f57--whimsical-daifuku-c61cd3.netlify.app/',
+  origin: 'https://65f75fd5a4d565d6126a2f57--whimsical-daifuku-c61cd3.netlify.app', // Remove trailing slash
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Add allowed HTTP methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Add allowed headers
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 app.use(cors(corsOptions));
