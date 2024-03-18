@@ -16,6 +16,9 @@ app.use(express.json())
 // mongoose.connect("mongodb://127.0.0.1:27017/employee");
 mongoose.connect("mongodb+srv://kushsahu144114:Q1aZGaVCJ9kAAje6@cluster0.peog2iz.mongodb.net/");
 // 
+app.get("/" , (req,res)=>{
+  res.json("hello");
+})
 
 app.post("/login",(req,res)=>{
     const {email,password}=req.body;
