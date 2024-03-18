@@ -7,7 +7,7 @@ const PORT=process.env.PORT || 3001
 
 app.use(cors(
   {
-    origin: [""],
+    origin: ["https://65f89a2865bdaa1a01b4db75--unique-gaufre-b57be4.netlify.app"],
     methods:["POST","GET"],
     credentials:true
   }
