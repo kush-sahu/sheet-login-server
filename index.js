@@ -7,8 +7,8 @@ const PORT=process.env.PORT || 3001
 
 app.use(cors(
   {
-    origin: ["https://65f89a2865bdaa1a01b4db75--unique-gaufre-b57be4.netlify.app"],
-    methods:["POST","GET"],
+    origin: ["https://sheet-login-server.onrender.com/"],
+    method:["POST","GET"],
     credentials:true
   }
 ));
@@ -44,5 +44,3 @@ app.post('/register',(req,res)=>{
 app.listen(PORT,()=>{
     console.log("server is running")
 })
-
-
